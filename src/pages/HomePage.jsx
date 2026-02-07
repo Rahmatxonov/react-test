@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
+import ParentComponent from '../components/ParentComponent';
 
 function HomePage() {
   const [count, setCount] = useState(0);
@@ -33,6 +34,8 @@ function HomePage() {
           <div className="button-base"></div>
         </button>
       </div>
+
+      <ParentComponent />
     </div>
   );
 }
