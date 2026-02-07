@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import ParentComponent from '../components/ParentComponent';
 
 function HomePage() {
   const [count, setCount] = useState(0);
