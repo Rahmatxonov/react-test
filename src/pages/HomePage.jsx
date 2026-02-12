@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-
 function HomePage() {
   const [count, setCount] = useState(0);
 
@@ -13,7 +12,7 @@ function HomePage() {
   // }
 
   return (
-    <div>
+    <div className="container">
       <Navbar />
 
       <div className="button-container">
@@ -33,10 +32,12 @@ function HomePage() {
           <div className="button-base"></div>
         </button>
       </div>
-
-      <ParentComponent />
     </div>
   );
 }
 
 export default HomePage;
+
+// Uyga vazifa  useState dan foydalaning!!!
+// 1) Inputdan yoki textarea dan kiritilgan qiymatini length ya'ni uzunligi real DOM da ko'rinadigan qilasiz
+// 2) modal yasab ko'rasiz useStatedan foydalanib open modal bosilganda oyna ochilsin x bosilganda modal yopilsin
