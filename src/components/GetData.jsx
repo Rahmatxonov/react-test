@@ -1,10 +1,16 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import RenderCountry from './RenderCountry';
+import Navbar from './Navbar';
 
-function GetData() {
+function GetData({ darkMode, setDarkMode }) {
   let [error, setError] = useState('');
   const [country, setCountry] = useState([]);
+  const [search, setSearch] = useState('');
+
+  const searchData = country.filter((item) =>
+    item.name.common.toLowerCase().includes(search),
+  );
 
   const errorData = String(error);
 
@@ -23,7 +29,13 @@ function GetData() {
 
   return (
     <div>
-      <RenderCountry davlatlar={country} />
+      <Navbar
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        search={search}
+        setSearch={setSearch}
+      />
+      <RenderCountry davlatlar={searchData} />
     </div>
   );
 }

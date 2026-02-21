@@ -61,7 +61,7 @@ body {
   color: blue;
   border-bottom: 2px solid blue;
 }
-/* From Uiverse.io by Z4drus */
+
 .button-container {
   display: flex;
   align-items: center;
@@ -152,14 +152,10 @@ body {
   border-radius: 10px 10px 8px 8px / 8px;
 }
 
-/* switch settings 👇 */
-
 .ui-switch {
-  /* switch */
   --switch-bg: rgb(135, 150, 165);
   --switch-width: 48px;
   --switch-height: 20px;
-  /* circle */
   --circle-diameter: 32px;
   --circle-bg: rgb(0, 56, 146);
   --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2);
@@ -230,8 +226,6 @@ body {
   opacity: 0;
 }
 
-/* actions */
-
 .ui-switch input:checked + .slider .circle {
   left: calc(100% - var(--circle-diameter));
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiNmZmYiCiAgICAgICAgZD0iTTQuMiAyLjVsLS43IDEuOC0xLjguNyAxLjguNy43IDEuOC42LTEuOEw2LjcgNWwtMS45LS43LS42LTEuOHptMTUgOC4zYTYuNyA2LjcgMCAxMS02LjYtNi42IDUuOCA1LjggMCAwMDYuNiA2LjZ6IiAvPgo8L3N2Zz4=');
@@ -249,13 +243,11 @@ body {
 .dark {
   background-color: black;
   color: white;
-  height: 100vh;
 }
 
 .light {
   background-color: white;
   color: black;
-  /* height: 100vh; */
 }
 .icons {
   display: flex;
@@ -275,7 +267,6 @@ body {
   color: blue;
 }
 
-/* From Uiverse.io by vinodjangid07 */
 .button {
   width: 50px;
   height: 50px;
@@ -311,7 +302,6 @@ body {
 }
 
 .button:hover .svgIcon {
-  /* width: 20px; */
   transition-duration: 0.3s;
   transform: translateY(-200%);
 }
@@ -321,7 +311,6 @@ body {
   bottom: -20px;
   content: 'Back to Top';
   color: white;
-  /* transition-duration: .3s; */
   font-size: 0px;
 }
 
@@ -329,7 +318,6 @@ body {
   font-size: 13px;
   opacity: 1;
   bottom: unset;
-  /* transform: translateY(-30px); */
   transition-duration: 0.3s;
 }
 .modal {
@@ -344,4 +332,23 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+}
+.box {
+  height: 300px;
+  width: 300px;
+  border: 3px solid blue;
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
 }
